@@ -1,0 +1,273 @@
+{
+  "monsters": [
+    {
+      "id": "slime_green",
+      "name": "초록 슬라임",
+      "nameEn": "Green Slime",
+      "level": 1,
+      "hp": 50,
+      "atk": 5,
+      "def": 2,
+      "exp": 15,
+      "gold": [3, 8],
+      "wordDifficulty": 1,
+      "zone": "forest_of_words",
+      "spriteColor": "#44CC44",
+      "spriteType": "slime",
+      "aggroType": "passive",
+      "respawnTime": 15,
+      "drops": [
+        {"itemId": "potion_hp_small", "rate": 0.4},
+        {"itemId": "slime_jelly", "rate": 0.3},
+        {"itemId": "sword_wooden", "rate": 0.05}
+      ]
+    },
+    {
+      "id": "slime_blue",
+      "name": "파란 슬라임",
+      "nameEn": "Blue Slime",
+      "level": 2,
+      "hp": 70,
+      "atk": 7,
+      "def": 3,
+      "exp": 22,
+      "gold": [5, 12],
+      "wordDifficulty": 1,
+      "zone": "forest_of_words",
+      "spriteColor": "#4488FF",
+      "spriteType": "slime",
+      "aggroType": "passive",
+      "respawnTime": 15,
+      "drops": [
+        {"itemId": "potion_hp_small", "rate": 0.35},
+        {"itemId": "slime_jelly", "rate": 0.35},
+        {"itemId": "shield_wooden", "rate": 0.04}
+      ]
+    },
+    {
+      "id": "wolf_gray",
+      "name": "회색 늑대",
+      "nameEn": "Gray Wolf",
+      "level": 4,
+      "hp": 120,
+      "atk": 12,
+      "def": 5,
+      "exp": 40,
+      "gold": [8, 18],
+      "wordDifficulty": 1,
+      "zone": "forest_of_words",
+      "spriteColor": "#888888",
+      "spriteType": "wolf",
+      "aggroType": "aggressive",
+      "respawnTime": 20,
+      "drops": [
+        {"itemId": "potion_hp_small", "rate": 0.3},
+        {"itemId": "wolf_fang", "rate": 0.25},
+        {"itemId": "leather_armor", "rate": 0.06}
+      ]
+    },
+    {
+      "id": "goblin_scout",
+      "name": "고블린 정찰병",
+      "nameEn": "Goblin Scout",
+      "level": 6,
+      "hp": 150,
+      "atk": 15,
+      "def": 7,
+      "exp": 55,
+      "gold": [12, 25],
+      "wordDifficulty": 2,
+      "zone": "forest_of_words",
+      "spriteColor": "#669933",
+      "spriteType": "humanoid",
+      "aggroType": "aggressive",
+      "respawnTime": 25,
+      "drops": [
+        {"itemId": "potion_hp_medium", "rate": 0.2},
+        {"itemId": "goblin_ear", "rate": 0.3},
+        {"itemId": "sword_iron", "rate": 0.04}
+      ]
+    },
+    {
+      "id": "skeleton_warrior",
+      "name": "해골 전사",
+      "nameEn": "Skeleton Warrior",
+      "level": 10,
+      "hp": 250,
+      "atk": 22,
+      "def": 12,
+      "exp": 90,
+      "gold": [20, 40],
+      "wordDifficulty": 2,
+      "zone": "dark_plains",
+      "spriteColor": "#EEDDCC",
+      "spriteType": "skeleton",
+      "aggroType": "aggressive",
+      "respawnTime": 30,
+      "drops": [
+        {"itemId": "potion_hp_medium", "rate": 0.25},
+        {"itemId": "bone_fragment", "rate": 0.35},
+        {"itemId": "sword_steel", "rate": 0.03},
+        {"itemId": "shield_iron", "rate": 0.03}
+      ]
+    },
+    {
+      "id": "dark_mage",
+      "name": "암흑 마법사",
+      "nameEn": "Dark Mage",
+      "level": 14,
+      "hp": 200,
+      "atk": 35,
+      "def": 8,
+      "exp": 130,
+      "gold": [30, 55],
+      "wordDifficulty": 2,
+      "zone": "dark_plains",
+      "spriteColor": "#6600AA",
+      "spriteType": "humanoid",
+      "aggroType": "aggressive",
+      "respawnTime": 35,
+      "drops": [
+        {"itemId": "potion_mp_medium", "rate": 0.3},
+        {"itemId": "dark_essence", "rate": 0.2},
+        {"itemId": "staff_magic", "rate": 0.03}
+      ]
+    },
+    {
+      "id": "crystal_golem",
+      "name": "수정 골렘",
+      "nameEn": "Crystal Golem",
+      "level": 20,
+      "hp": 500,
+      "atk": 30,
+      "def": 25,
+      "exp": 200,
+      "gold": [40, 80],
+      "wordDifficulty": 3,
+      "zone": "crystal_cave",
+      "spriteColor": "#88DDFF",
+      "spriteType": "golem",
+      "aggroType": "passive",
+      "respawnTime": 45,
+      "drops": [
+        {"itemId": "crystal_shard", "rate": 0.4},
+        {"itemId": "potion_hp_large", "rate": 0.15},
+        {"itemId": "armor_crystal", "rate": 0.02}
+      ]
+    },
+    {
+      "id": "vampire_lord",
+      "name": "뱀파이어 로드",
+      "nameEn": "Vampire Lord",
+      "level": 30,
+      "hp": 800,
+      "atk": 50,
+      "def": 20,
+      "exp": 350,
+      "gold": [60, 120],
+      "wordDifficulty": 3,
+      "zone": "ancient_ruins",
+      "spriteColor": "#CC0033",
+      "spriteType": "humanoid",
+      "aggroType": "aggressive",
+      "respawnTime": 60,
+      "drops": [
+        {"itemId": "blood_vial", "rate": 0.3},
+        {"itemId": "cape_darkness", "rate": 0.02},
+        {"itemId": "sword_blood", "rate": 0.01}
+      ]
+    },
+    {
+      "id": "ancient_guardian",
+      "name": "고대 수호자",
+      "nameEn": "Ancient Guardian",
+      "level": 40,
+      "hp": 1500,
+      "atk": 65,
+      "def": 40,
+      "exp": 600,
+      "gold": [100, 200],
+      "wordDifficulty": 4,
+      "zone": "ancient_ruins",
+      "spriteColor": "#DDAA33",
+      "spriteType": "golem",
+      "aggroType": "aggressive",
+      "respawnTime": 90,
+      "drops": [
+        {"itemId": "ancient_rune", "rate": 0.2},
+        {"itemId": "armor_ancient", "rate": 0.01},
+        {"itemId": "ring_guardian", "rate": 0.008}
+      ]
+    },
+    {
+      "id": "fire_dragon",
+      "name": "화염 드래곤",
+      "nameEn": "Fire Dragon",
+      "level": 55,
+      "hp": 5000,
+      "atk": 100,
+      "def": 60,
+      "exp": 2000,
+      "gold": [300, 600],
+      "wordDifficulty": 4,
+      "zone": "dragon_peak",
+      "spriteColor": "#FF4400",
+      "spriteType": "dragon",
+      "aggroType": "aggressive",
+      "respawnTime": 180,
+      "isBoss": true,
+      "drops": [
+        {"itemId": "dragon_scale", "rate": 0.5},
+        {"itemId": "dragon_heart", "rate": 0.1},
+        {"itemId": "sword_dragon", "rate": 0.005},
+        {"itemId": "armor_dragon", "rate": 0.003}
+      ]
+    },
+    {
+      "id": "shadow_assassin",
+      "name": "그림자 암살자",
+      "nameEn": "Shadow Assassin",
+      "level": 60,
+      "hp": 2000,
+      "atk": 120,
+      "def": 30,
+      "exp": 1500,
+      "gold": [200, 400],
+      "wordDifficulty": 5,
+      "zone": "shadow_realm",
+      "spriteColor": "#220044",
+      "spriteType": "humanoid",
+      "aggroType": "aggressive",
+      "respawnTime": 60,
+      "drops": [
+        {"itemId": "shadow_essence", "rate": 0.3},
+        {"itemId": "dagger_shadow", "rate": 0.02},
+        {"itemId": "cloak_invisibility", "rate": 0.005}
+      ]
+    },
+    {
+      "id": "abyss_demon",
+      "name": "심연의 악마",
+      "nameEn": "Abyss Demon",
+      "level": 80,
+      "hp": 10000,
+      "atk": 150,
+      "def": 80,
+      "exp": 5000,
+      "gold": [500, 1000],
+      "wordDifficulty": 5,
+      "zone": "abyss_gate",
+      "spriteColor": "#880000",
+      "spriteType": "demon",
+      "aggroType": "aggressive",
+      "respawnTime": 300,
+      "isBoss": true,
+      "drops": [
+        {"itemId": "demon_horn", "rate": 0.4},
+        {"itemId": "sword_abyss", "rate": 0.003},
+        {"itemId": "armor_abyss", "rate": 0.002},
+        {"itemId": "ring_abyss", "rate": 0.001}
+      ]
+    }
+  ]
+}

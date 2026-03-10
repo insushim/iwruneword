@@ -1,0 +1,52 @@
+{
+  "npcs": [
+    {
+      "id": "npc_elder",
+      "name": "마을 촌장",
+      "nameEn": "Village Elder",
+      "zone": "starting_village",
+      "x": 800,
+      "y": 800,
+      "spriteColor": "#DDBB66",
+      "type": "quest",
+      "dialog": [
+        "환영하네, 모험가여. 이 세계에서 살아남으려면 '룬워드'의 힘을 익혀야 하네.",
+        "몬스터를 공격하면 고대 문자의 수수께끼가 나타날 것이네. 올바른 뜻을 고르면 강력한 힘이 발동되지.",
+        "먼저 마을 밖 단어의 숲에서 슬라임을 처치해보게. 행운을 비네!"
+      ]
+    },
+    {
+      "id": "npc_shopkeeper",
+      "name": "상점 주인 마르코",
+      "nameEn": "Shopkeeper Marco",
+      "zone": "starting_village",
+      "x": 650,
+      "y": 750,
+      "spriteColor": "#BB8844",
+      "type": "shop",
+      "shopItems": ["potion_hp_small", "potion_hp_medium", "potion_mp_small", "potion_mp_medium", "scroll_town", "sword_wooden", "shield_wooden", "leather_armor"]
+    },
+    {
+      "id": "npc_blacksmith",
+      "name": "대장장이 볼칸",
+      "nameEn": "Blacksmith Vulkan",
+      "zone": "starting_village",
+      "x": 950,
+      "y": 700,
+      "spriteColor": "#AA4422",
+      "type": "shop",
+      "shopItems": ["sword_iron", "sword_steel", "shield_iron", "staff_magic"]
+    },
+    {
+      "id": "npc_healer",
+      "name": "치유사 루나",
+      "nameEn": "Healer Luna",
+      "zone": "starting_village",
+      "x": 750,
+      "y": 900,
+      "spriteColor": "#AADDFF",
+      "type": "healer",
+      "dialog": ["지친 몸과 마음을 치유해 드릴게요. 완전히 회복되었습니다!"]
+    }
+  ]
+}

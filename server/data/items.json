@@ -1,0 +1,47 @@
+{
+  "items": [
+    {"id": "potion_hp_small", "name": "소형 체력 물약", "type": "consumable", "subType": "potion", "effect": {"hp": 50}, "price": 10, "grade": 0, "stackable": true, "maxStack": 99, "description": "체력을 50 회복합니다."},
+    {"id": "potion_hp_medium", "name": "중형 체력 물약", "type": "consumable", "subType": "potion", "effect": {"hp": 150}, "price": 30, "grade": 0, "stackable": true, "maxStack": 99, "description": "체력을 150 회복합니다."},
+    {"id": "potion_hp_large", "name": "대형 체력 물약", "type": "consumable", "subType": "potion", "effect": {"hp": 500}, "price": 100, "grade": 1, "stackable": true, "maxStack": 99, "description": "체력을 500 회복합니다."},
+    {"id": "potion_mp_small", "name": "소형 마나 물약", "type": "consumable", "subType": "potion", "effect": {"mp": 30}, "price": 15, "grade": 0, "stackable": true, "maxStack": 99, "description": "마나를 30 회복합니다."},
+    {"id": "potion_mp_medium", "name": "중형 마나 물약", "type": "consumable", "subType": "potion", "effect": {"mp": 100}, "price": 45, "grade": 0, "stackable": true, "maxStack": 99, "description": "마나를 100 회복합니다."},
+    {"id": "scroll_town", "name": "귀환 주문서", "type": "consumable", "subType": "scroll", "effect": {"teleport": "starting_village"}, "price": 50, "grade": 0, "stackable": true, "maxStack": 20, "description": "여명의 마을로 즉시 귀환합니다."},
+
+    {"id": "sword_wooden", "name": "나무 검", "type": "equipment", "subType": "weapon", "slot": "weapon", "stats": {"atk": 3}, "requiredLevel": 1, "price": 20, "grade": 0, "description": "초보자용 나무 검."},
+    {"id": "sword_iron", "name": "철 검", "type": "equipment", "subType": "weapon", "slot": "weapon", "stats": {"atk": 8}, "requiredLevel": 5, "price": 100, "grade": 0, "description": "단단한 철로 만든 검."},
+    {"id": "sword_steel", "name": "강철 검", "type": "equipment", "subType": "weapon", "slot": "weapon", "stats": {"atk": 15}, "requiredLevel": 10, "price": 300, "grade": 1, "description": "정제된 강철로 단조한 검."},
+    {"id": "sword_blood", "name": "피의 장검", "type": "equipment", "subType": "weapon", "slot": "weapon", "stats": {"atk": 35, "hp": -20}, "requiredLevel": 25, "price": 2000, "grade": 3, "description": "피를 양분 삼는 저주받은 검."},
+    {"id": "sword_dragon", "name": "드래곤 슬레이어", "type": "equipment", "subType": "weapon", "slot": "weapon", "stats": {"atk": 65, "def": 10}, "requiredLevel": 50, "price": 50000, "grade": 4, "description": "드래곤의 뼈로 만든 전설의 검."},
+    {"id": "sword_abyss", "name": "심연의 대검", "type": "equipment", "subType": "weapon", "slot": "weapon", "stats": {"atk": 100, "mp": 50}, "requiredLevel": 75, "price": 200000, "grade": 5, "description": "심연에서 태어난 신화급 대검."},
+
+    {"id": "staff_magic", "name": "마법 지팡이", "type": "equipment", "subType": "weapon", "slot": "weapon", "stats": {"atk": 12, "mp": 30}, "requiredLevel": 10, "price": 350, "grade": 1, "description": "마법의 힘이 깃든 지팡이."},
+    {"id": "dagger_shadow", "name": "그림자 단검", "type": "equipment", "subType": "weapon", "slot": "weapon", "stats": {"atk": 45, "speed": 2}, "requiredLevel": 55, "price": 30000, "grade": 3, "description": "그림자처럼 빠르게 베는 단검."},
+
+    {"id": "shield_wooden", "name": "나무 방패", "type": "equipment", "subType": "shield", "slot": "offhand", "stats": {"def": 3}, "requiredLevel": 1, "price": 15, "grade": 0, "description": "초보자용 나무 방패."},
+    {"id": "shield_iron", "name": "철 방패", "type": "equipment", "subType": "shield", "slot": "offhand", "stats": {"def": 8}, "requiredLevel": 8, "price": 150, "grade": 0, "description": "철로 만든 방패."},
+
+    {"id": "leather_armor", "name": "가죽 갑옷", "type": "equipment", "subType": "armor", "slot": "body", "stats": {"def": 5, "hp": 20}, "requiredLevel": 3, "price": 80, "grade": 0, "description": "가벼운 가죽 갑옷."},
+    {"id": "armor_crystal", "name": "수정 갑옷", "type": "equipment", "subType": "armor", "slot": "body", "stats": {"def": 20, "mp": 40}, "requiredLevel": 18, "price": 3000, "grade": 2, "description": "수정으로 만든 아름다운 갑옷."},
+    {"id": "armor_ancient", "name": "고대의 갑옷", "type": "equipment", "subType": "armor", "slot": "body", "stats": {"def": 35, "hp": 100}, "requiredLevel": 35, "price": 15000, "grade": 3, "description": "고대 문명의 기술로 만든 갑옷."},
+    {"id": "armor_dragon", "name": "드래곤 아머", "type": "equipment", "subType": "armor", "slot": "body", "stats": {"def": 55, "hp": 200, "atk": 10}, "requiredLevel": 50, "price": 60000, "grade": 4, "description": "드래곤 비늘로 만든 전설의 갑옷."},
+    {"id": "armor_abyss", "name": "심연의 갑주", "type": "equipment", "subType": "armor", "slot": "body", "stats": {"def": 80, "hp": 500, "mp": 100}, "requiredLevel": 75, "price": 250000, "grade": 5, "description": "심연의 힘을 담은 신화급 갑주."},
+
+    {"id": "ring_guardian", "name": "수호자의 반지", "type": "equipment", "subType": "accessory", "slot": "ring", "stats": {"def": 10, "hp": 50}, "requiredLevel": 35, "price": 8000, "grade": 3, "description": "착용자를 지켜주는 수호의 반지."},
+    {"id": "ring_abyss", "name": "심연의 반지", "type": "equipment", "subType": "accessory", "slot": "ring", "stats": {"atk": 30, "mp": 80, "def": 15}, "requiredLevel": 75, "price": 300000, "grade": 5, "description": "모든 능력을 높여주는 심연의 반지."},
+    {"id": "cape_darkness", "name": "어둠의 망토", "type": "equipment", "subType": "accessory", "slot": "cape", "stats": {"def": 8, "speed": 1}, "requiredLevel": 25, "price": 5000, "grade": 2, "description": "그림자 속에 숨을 수 있는 망토."},
+    {"id": "cloak_invisibility", "name": "투명 망토", "type": "equipment", "subType": "accessory", "slot": "cape", "stats": {"speed": 3, "def": 5}, "requiredLevel": 55, "price": 40000, "grade": 4, "description": "모습을 감출 수 있는 전설의 망토."},
+
+    {"id": "slime_jelly", "name": "슬라임 젤리", "type": "material", "price": 5, "grade": 0, "stackable": true, "maxStack": 99, "description": "슬라임에서 얻은 젤리."},
+    {"id": "wolf_fang", "name": "늑대 이빨", "type": "material", "price": 12, "grade": 0, "stackable": true, "maxStack": 99, "description": "날카로운 늑대 이빨."},
+    {"id": "goblin_ear", "name": "고블린 귀", "type": "material", "price": 15, "grade": 0, "stackable": true, "maxStack": 99, "description": "고블린의 뾰족한 귀."},
+    {"id": "bone_fragment", "name": "뼈 조각", "type": "material", "price": 20, "grade": 0, "stackable": true, "maxStack": 99, "description": "해골에서 떨어진 뼈 조각."},
+    {"id": "dark_essence", "name": "어둠의 정수", "type": "material", "price": 40, "grade": 1, "stackable": true, "maxStack": 99, "description": "암흑 마법의 정수."},
+    {"id": "crystal_shard", "name": "수정 파편", "type": "material", "price": 50, "grade": 1, "stackable": true, "maxStack": 99, "description": "빛나는 수정 파편."},
+    {"id": "blood_vial", "name": "피의 유리병", "type": "material", "price": 80, "grade": 2, "stackable": true, "maxStack": 99, "description": "뱀파이어의 피가 담긴 유리병."},
+    {"id": "ancient_rune", "name": "고대 룬", "type": "material", "price": 200, "grade": 3, "stackable": true, "maxStack": 99, "description": "고대 문자가 새겨진 룬 스톤."},
+    {"id": "dragon_scale", "name": "드래곤 비늘", "type": "material", "price": 500, "grade": 3, "stackable": true, "maxStack": 99, "description": "드래곤의 단단한 비늘."},
+    {"id": "dragon_heart", "name": "드래곤의 심장", "type": "material", "price": 5000, "grade": 4, "stackable": true, "maxStack": 10, "description": "아직도 뛰고 있는 드래곤의 심장."},
+    {"id": "shadow_essence", "name": "그림자 정수", "type": "material", "price": 300, "grade": 3, "stackable": true, "maxStack": 99, "description": "그림자 영역에서 응축된 정수."},
+    {"id": "demon_horn", "name": "악마의 뿔", "type": "material", "price": 1000, "grade": 4, "stackable": true, "maxStack": 99, "description": "심연의 악마에게서 얻은 뿔."}
+  ]
+}
