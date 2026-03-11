@@ -32,8 +32,8 @@ const schemaSQL = `
     speed REAL DEFAULT 3.0,
     gold INTEGER DEFAULT 100,
     zone TEXT DEFAULT 'starting_village',
-    x REAL DEFAULT 800,
-    y REAL DEFAULT 800,
+    x REAL DEFAULT 2400,
+    y REAL DEFAULT 2400,
     words_correct INTEGER DEFAULT 0,
     words_wrong INTEGER DEFAULT 0,
     monsters_killed INTEGER DEFAULT 0,
@@ -48,6 +48,7 @@ const schemaSQL = `
     quantity INTEGER DEFAULT 1,
     slot INTEGER,
     equipped INTEGER DEFAULT 0,
+    enhancement_level INTEGER DEFAULT 0,
     FOREIGN KEY (character_id) REFERENCES characters(id) ON DELETE CASCADE
   );
   CREATE TABLE IF NOT EXISTS word_history (
@@ -70,5 +71,13 @@ const schemaSQL = `
   CREATE INDEX IF NOT EXISTS idx_word_history_character ON word_history(character_id);
 `;
 db.exec(schemaSQL);
+
+// Migration: add enhancement_level column if missing (for existing DBs)
+try {
+  db.prepare("SELECT enhancement_level FROM inventory LIMIT 1").get();
+} catch (e) {
+  db.exec("ALTER TABLE inventory ADD COLUMN enhancement_level INTEGER DEFAULT 0");
+  console.log("Migration: added enhancement_level column to inventory");
+}
 
 module.exports = db;
