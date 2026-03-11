@@ -1766,20 +1766,14 @@ function gameLoop(now){
         for(const z of zones){
           if(newX>=z.x1&&newX<=z.x2&&newY>=z.y1&&newY<=z.y2){blocked=true;break;}
         }
-        if(!blocked){
-          // Tree/rock collision
-          if(isTreeBlocked(newX,newY)){
-            // Try sliding
-            if(!isTreeBlocked(newX,player.y))player.x=newX;
-            else if(!isTreeBlocked(player.x,newY))player.y=newY;
-          } else {player.x=newX;player.y=newY;}
-        } else{
+        if(!blocked){player.x=newX;player.y=newY;}
+        else{
           // Try sliding along walls
           let bx=false,by=false;
           for(const z of zones){if(newX>=z.x1&&newX<=z.x2&&player.y>=z.y1&&player.y<=z.y2)bx=true;}
           for(const z of zones){if(player.x>=z.x1&&player.x<=z.x2&&newY>=z.y1&&newY<=z.y2)by=true;}
-          if(!bx&&!isTreeBlocked(newX,player.y))player.x=newX;
-          if(!by&&!isTreeBlocked(player.x,newY))player.y=newY;
+          if(!bx)player.x=newX;
+          if(!by)player.y=newY;
         }
         // Auto-pickup nearby ground drops
         for(const d of (worldState.drops||[])){
@@ -1851,6 +1845,8 @@ function gameLoop(now){
     for(const m of worldState.monsters)drawMonster(m);
     for(const p of worldState.players)drawOtherPlayer(p);
     drawPlayer(player);
+    // Y-sorted tree overlay: redraw trees whose base Y > player Y (in front of player)
+    drawTreeOverlay();
   }
 
   // Chat bubbles
@@ -1930,51 +1926,29 @@ function getTileForZone(tx,ty){
 // Seeded hash for deterministic decoration placement
 function tileHash(tx,ty){return((tx*7919+ty*104729)>>>0)%1000;}
 
-// Tree/rock collision check - returns true if blocked
-function isTreeBlocked(wx,wy){
-  const ts=32;
-  // Check 3x3 tiles around player
-  const ptx=Math.floor(wx/ts),pty=Math.floor(wy/ts);
-  for(let dx=-1;dx<=1;dx++){
-    for(let dy=-1;dy<=1;dy++){
-      const tx=ptx+dx,ty=pty+dy;
-      if(tx<0||ty<0||tx>=1200||ty>=900)continue;
-      const h=tileHash(tx,ty);
-      let hasTree=false;
-      // Village area skip
+// Get visible trees near a point for Y-sort overlay rendering
+function getVisibleTrees(camX,camY,cw,ch){
+  const ts=32,trees=[];
+  const stx=Math.floor(camX/ts)-1,sty=Math.floor(camY/ts)-1;
+  const etx=stx+Math.ceil(cw/ts)+3,ety=sty+Math.ceil(ch/ts)+3;
+  for(let tx=Math.max(0,stx);tx<Math.min(1200,etx);tx++){
+    for(let ty=Math.max(0,sty);ty<Math.min(900,ety);ty++){
       if(tx>=55&&tx<=95&&ty>=55&&ty<=95)continue;
-      // Forest zone
-      if(tx<375&&ty<281&&h<55)hasTree=true;
-      // Dark plains
-      else if(tx>=413&&tx<773&&ty<281&&h<30)hasTree=true;
-      // Crystal cave
-      else if(tx<375&&ty>=319&&ty<586&&h<25)hasTree=true;
-      // Enchanted garden
-      else if(tx>=413&&tx<773&&ty>=619&&h<50)hasTree=true;
-      // Frozen lake
-      else if(tx<375&&ty>=619&&h<15)hasTree=true;
-      // Ancient ruins
-      else if(tx>=413&&tx<773&&ty>=319&&ty<586&&h<12)hasTree=true;
-      if(hasTree){
-        const treeX=tx*ts+ts/2,treeY=ty*ts+ts/2;
-        // Trunk collision (bottom part of tree, radius ~10px)
-        if(Math.abs(wx-treeX)<10&&Math.abs(wy-treeY)<10)return true;
-      }
-      // Rocks
-      let hasRock=false;
-      if(tx<375&&ty<281&&h>=60&&h<66)hasRock=true;
-      else if(tx>=413&&tx<773&&ty<281&&h>=55&&h<63)hasRock=true;
-      else if(tx<375&&ty>=319&&ty<586&&h>=40&&h<44)hasRock=true;
-      else if(tx>=413&&tx<773&&ty>=319&&ty<586&&h>=30&&h<38)hasRock=true;
-      else if(tx>=806&&ty<188&&h>=60&&h<68)hasRock=true;
-      else if(tx>=806&&ty>=206&&ty<450&&h>=25&&h<32)hasRock=true;
-      if(hasRock){
-        const rx=tx*ts+ts/2,ry=ty*ts+ts/2;
-        if(Math.abs(wx-rx)<8&&Math.abs(wy-ry)<8)return true;
+      const h=tileHash(tx,ty);
+      let treeKey=null;
+      if(tx<375&&ty<281&&h<55)treeKey=h<28?'tree_oak':'tree_pine';
+      else if(tx>=413&&tx<773&&ty<281&&h<30)treeKey='tree_dead';
+      else if(tx<375&&ty>=319&&ty<586&&h<25)treeKey='tree_crystal';
+      else if(tx>=413&&tx<773&&ty>=619&&h<50)treeKey=h<25?'tree_oak':'tree_pine';
+      else if(tx<375&&ty>=619&&h<15)treeKey='tree_dead';
+      else if(tx>=413&&tx<773&&ty>=319&&ty<586&&h<12)treeKey='tree_dead';
+      if(treeKey){
+        const wx=tx*ts+ts/2,wy=ty*ts+ts/2;
+        trees.push({x:wx,y:wy,key:treeKey});
       }
     }
   }
-  return false;
+  return trees;
 }
 
 function drawMap(){
@@ -2347,6 +2321,27 @@ function showZoneNotification(name){
   el.classList.add('show');
   setTimeout(()=>el.classList.remove('show'),2500);
 }
+function drawTreeOverlay(){
+  if(!player)return;
+  const trees=getVisibleTrees(camera.x,camera.y,canvas.width,canvas.height);
+  const py=player.y;
+  for(const t of trees){
+    // Only redraw trees whose base is below the player (visually in front)
+    if(t.y<=py)continue;
+    const ssx=t.x-camera.x,ssy=t.y-camera.y;
+    const tree=EnvCache[t.key];
+    if(tree){
+      // Semi-transparent overlay when player is behind tree
+      const dist=Math.abs(t.y-py);
+      if(dist<60){
+        ctx.globalAlpha=0.5; // Make tree semi-transparent when player is close behind
+      }
+      ctx.drawImage(tree,ssx-tree.width/2,ssy-tree.height+10);
+      ctx.globalAlpha=1;
+    }
+  }
+}
+
 function drawZoneBoundaries(){
   // Dashed path lines between zones (like dirt roads)
   ctx.save();
