@@ -1,0 +1,16 @@
+{
+  "assets": [
+    {
+      "key": "grass_a",
+      "src": "grass_a.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "key": "path_dirt",
+      "src": "path_dirt.png",
+      "width": 128,
+      "height": 128
+    }
+  ]
+}

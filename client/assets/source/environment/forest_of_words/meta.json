@@ -1,0 +1,16 @@
+{
+  "assets": [
+    {
+      "key": "rock_gray",
+      "src": "rock_gray.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "tree_oak",
+      "src": "tree_oak.png",
+      "width": 256,
+      "height": 256
+    }
+  ]
+}

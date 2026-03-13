@@ -1,0 +1,2741 @@
+{
+  "version": 1,
+  "generatedAt": "2026-03-13T04:41:21.296Z",
+  "sprites": {
+    "slime_green": {
+      "src": "assets/remaster/sprites/slime_green.png",
+      "kind": "directional",
+      "frameWidth": 168,
+      "frameHeight": 168,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "slime_blue": {
+      "src": "assets/remaster/sprites/slime_blue.png",
+      "kind": "directional",
+      "frameWidth": 168,
+      "frameHeight": 168,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "wolf_gray": {
+      "src": "assets/remaster/sprites/wolf_gray.png",
+      "kind": "directional",
+      "frameWidth": 204,
+      "frameHeight": 156,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "goblin_scout": {
+      "src": "assets/remaster/sprites/goblin_scout.png",
+      "kind": "directional",
+      "frameWidth": 120,
+      "frameHeight": 156,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "skeleton_warrior": {
+      "src": "assets/remaster/sprites/skeleton_warrior.png",
+      "kind": "directional",
+      "frameWidth": 144,
+      "frameHeight": 192,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "dark_mage": {
+      "src": "assets/remaster/sprites/dark_mage.png",
+      "kind": "directional",
+      "frameWidth": 144,
+      "frameHeight": 192,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "crystal_golem": {
+      "src": "assets/remaster/sprites/crystal_golem.png",
+      "kind": "directional",
+      "frameWidth": 192,
+      "frameHeight": 216,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "vampire_lord": {
+      "src": "assets/remaster/sprites/vampire_lord.png",
+      "kind": "directional",
+      "frameWidth": 144,
+      "frameHeight": 192,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "ancient_guardian": {
+      "src": "assets/remaster/sprites/ancient_guardian.png",
+      "kind": "directional",
+      "frameWidth": 192,
+      "frameHeight": 216,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "fire_dragon": {
+      "src": "assets/remaster/sprites/fire_dragon.png",
+      "kind": "directional",
+      "frameWidth": 330,
+      "frameHeight": 288,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "shadow_assassin": {
+      "src": "assets/remaster/sprites/shadow_assassin.png",
+      "kind": "directional",
+      "frameWidth": 132,
+      "frameHeight": 180,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "abyss_demon": {
+      "src": "assets/remaster/sprites/abyss_demon.png",
+      "kind": "directional",
+      "frameWidth": 264,
+      "frameHeight": 276,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "ice_elemental": {
+      "src": "assets/remaster/sprites/ice_elemental.png",
+      "kind": "directional",
+      "frameWidth": 168,
+      "frameHeight": 168,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "frost_wolf": {
+      "src": "assets/remaster/sprites/frost_wolf.png",
+      "kind": "directional",
+      "frameWidth": 204,
+      "frameHeight": 156,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "garden_sprite": {
+      "src": "assets/remaster/sprites/garden_sprite.png",
+      "kind": "directional",
+      "frameWidth": 144,
+      "frameHeight": 144,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "thorn_golem": {
+      "src": "assets/remaster/sprites/thorn_golem.png",
+      "kind": "directional",
+      "frameWidth": 192,
+      "frameHeight": 216,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "doom_knight": {
+      "src": "assets/remaster/sprites/doom_knight.png",
+      "kind": "directional",
+      "frameWidth": 150,
+      "frameHeight": 204,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "world_boss_treant": {
+      "src": "assets/remaster/sprites/world_boss_treant.png",
+      "kind": "directional",
+      "frameWidth": 192,
+      "frameHeight": 216,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "world_boss_lich": {
+      "src": "assets/remaster/sprites/world_boss_lich.png",
+      "kind": "directional",
+      "frameWidth": 144,
+      "frameHeight": 192,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "world_boss_crystal_dragon": {
+      "src": "assets/remaster/sprites/world_boss_crystal_dragon.png",
+      "kind": "directional",
+      "frameWidth": 330,
+      "frameHeight": 288,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "player_WARRIOR": {
+      "src": "assets/remaster/sprites/player_WARRIOR.png",
+      "kind": "directional",
+      "frameWidth": 192,
+      "frameHeight": 252,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "player_MAGE": {
+      "src": "assets/remaster/sprites/player_MAGE.png",
+      "kind": "directional",
+      "frameWidth": 192,
+      "frameHeight": 252,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "player_ROGUE": {
+      "src": "assets/remaster/sprites/player_ROGUE.png",
+      "kind": "directional",
+      "frameWidth": 192,
+      "frameHeight": 252,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "player_HEALER": {
+      "src": "assets/remaster/sprites/player_HEALER.png",
+      "kind": "directional",
+      "frameWidth": 192,
+      "frameHeight": 252,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "player_ARCHER": {
+      "src": "assets/remaster/sprites/player_ARCHER.png",
+      "kind": "directional",
+      "frameWidth": 192,
+      "frameHeight": 252,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "npc_elder": {
+      "src": "assets/remaster/sprites/npc_elder.png",
+      "kind": "directional",
+      "frameWidth": 144,
+      "frameHeight": 192,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "npc_shopkeeper": {
+      "src": "assets/remaster/sprites/npc_shopkeeper.png",
+      "kind": "directional",
+      "frameWidth": 144,
+      "frameHeight": 192,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "npc_blacksmith": {
+      "src": "assets/remaster/sprites/npc_blacksmith.png",
+      "kind": "directional",
+      "frameWidth": 150,
+      "frameHeight": 198,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    },
+    "npc_healer": {
+      "src": "assets/remaster/sprites/npc_healer.png",
+      "kind": "directional",
+      "frameWidth": 144,
+      "frameHeight": 192,
+      "framesPerDir": 4,
+      "rows": [
+        {
+          "name": "down",
+          "row": 0,
+          "frames": 4
+        },
+        {
+          "name": "down_right",
+          "row": 1,
+          "frames": 4
+        },
+        {
+          "name": "right",
+          "row": 2,
+          "frames": 4
+        },
+        {
+          "name": "up_right",
+          "row": 3,
+          "frames": 4
+        },
+        {
+          "name": "up",
+          "row": 4,
+          "frames": 4
+        },
+        {
+          "name": "up_left",
+          "row": 5,
+          "frames": 4
+        },
+        {
+          "name": "left",
+          "row": 6,
+          "frames": 4
+        },
+        {
+          "name": "down_left",
+          "row": 7,
+          "frames": 4
+        },
+        {
+          "name": "atk_down",
+          "row": 8,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_right",
+          "row": 9,
+          "frames": 4
+        },
+        {
+          "name": "atk_right",
+          "row": 10,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_right",
+          "row": 11,
+          "frames": 4
+        },
+        {
+          "name": "atk_up",
+          "row": 12,
+          "frames": 4
+        },
+        {
+          "name": "atk_up_left",
+          "row": 13,
+          "frames": 4
+        },
+        {
+          "name": "atk_left",
+          "row": 14,
+          "frames": 4
+        },
+        {
+          "name": "atk_down_left",
+          "row": 15,
+          "frames": 4
+        }
+      ]
+    }
+  },
+  "environment": {
+    "tree_oak": {
+      "src": "assets/remaster/environment/tree_oak.png",
+      "width": 192,
+      "height": 288
+    },
+    "tree_pine": {
+      "src": "assets/remaster/environment/tree_pine.png",
+      "width": 192,
+      "height": 300
+    },
+    "tree_dead": {
+      "src": "assets/remaster/environment/tree_dead.png",
+      "width": 192,
+      "height": 228
+    },
+    "tree_crystal": {
+      "src": "assets/remaster/environment/tree_crystal.png",
+      "width": 192,
+      "height": 240
+    },
+    "rock_gray": {
+      "src": "assets/remaster/environment/rock_gray.png",
+      "width": 72,
+      "height": 72
+    },
+    "rock_brown": {
+      "src": "assets/remaster/environment/rock_brown.png",
+      "width": 84,
+      "height": 84
+    },
+    "rock_dark": {
+      "src": "assets/remaster/environment/rock_dark.png",
+      "width": 66,
+      "height": 66
+    },
+    "rock_ice": {
+      "src": "assets/remaster/environment/rock_ice.png",
+      "width": 60,
+      "height": 60
+    },
+    "rock_lava": {
+      "src": "assets/remaster/environment/rock_lava.png",
+      "width": 78,
+      "height": 78
+    },
+    "bush_green": {
+      "src": "assets/remaster/environment/bush_green.png",
+      "width": 84,
+      "height": 84
+    },
+    "bush_flower": {
+      "src": "assets/remaster/environment/bush_flower.png",
+      "width": 72,
+      "height": 72
+    },
+    "bush_autumn": {
+      "src": "assets/remaster/environment/bush_autumn.png",
+      "width": 78,
+      "height": 78
+    },
+    "bush_snow": {
+      "src": "assets/remaster/environment/bush_snow.png",
+      "width": 66,
+      "height": 66
+    },
+    "building_house": {
+      "src": "assets/remaster/environment/building_house.png",
+      "width": 240,
+      "height": 264
+    },
+    "building_shop": {
+      "src": "assets/remaster/environment/building_shop.png",
+      "width": 264,
+      "height": 252
+    },
+    "building_inn": {
+      "src": "assets/remaster/environment/building_inn.png",
+      "width": 288,
+      "height": 276
+    },
+    "building_blacksmith": {
+      "src": "assets/remaster/environment/building_blacksmith.png",
+      "width": 228,
+      "height": 240
+    },
+    "building_townhall": {
+      "src": "assets/remaster/environment/building_townhall.png",
+      "width": 360,
+      "height": 300
+    }
+  },
+  "tiles": {
+    "grass": {
+      "src": "assets/remaster/tiles/grass.png",
+      "width": 128,
+      "height": 128
+    },
+    "dark": {
+      "src": "assets/remaster/tiles/dark.png",
+      "width": 128,
+      "height": 128
+    },
+    "cave": {
+      "src": "assets/remaster/tiles/cave.png",
+      "width": 128,
+      "height": 128
+    },
+    "ruins": {
+      "src": "assets/remaster/tiles/ruins.png",
+      "width": 128,
+      "height": 128
+    },
+    "volcanic": {
+      "src": "assets/remaster/tiles/volcanic.png",
+      "width": 128,
+      "height": 128
+    },
+    "shadow": {
+      "src": "assets/remaster/tiles/shadow.png",
+      "width": 128,
+      "height": 128
+    },
+    "abyss": {
+      "src": "assets/remaster/tiles/abyss.png",
+      "width": 128,
+      "height": 128
+    },
+    "stone": {
+      "src": "assets/remaster/tiles/stone.png",
+      "width": 128,
+      "height": 128
+    },
+    "ice": {
+      "src": "assets/remaster/tiles/ice.png",
+      "width": 128,
+      "height": 128
+    },
+    "garden": {
+      "src": "assets/remaster/tiles/garden.png",
+      "width": 128,
+      "height": 128
+    },
+    "wasteland": {
+      "src": "assets/remaster/tiles/wasteland.png",
+      "width": 128,
+      "height": 128
+    },
+    "water": {
+      "src": "assets/remaster/tiles/water.png",
+      "width": 128,
+      "height": 128
+    }
+  }
+}

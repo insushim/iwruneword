@@ -5,7 +5,20 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "dev": "nodemon server/index.js",
+    "export:assets": "node scripts/export-remaster-assets.js",
+    "pack:assets": "node scripts/pack-generated-assets.js all",
+    "sync:source-meta": "node scripts/sync-generated-meta.mjs",
+    "smoke:image-pipeline": "node scripts/smoke-test-image-pipeline.mjs",
+    "mcp:image-server": "node tools/mcp-image-server/src/index.mjs",
+    "generate:sample:character": "node scripts/generate-sample-assets.mjs character",
+    "generate:sample:monster": "node scripts/generate-sample-assets.mjs monster",
+    "generate:sample:environment": "node scripts/generate-sample-assets.mjs environment",
+    "generate:plan": "node scripts/generate-sample-assets.mjs plan",
+    "generate:all:characters": "node scripts/generate-sample-assets.mjs characters",
+    "generate:all:monsters": "node scripts/generate-sample-assets.mjs monsters",
+    "generate:all:environments": "node scripts/generate-sample-assets.mjs environments",
+    "generate:all:assets": "node scripts/generate-sample-assets.mjs all"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,49 @@
+{
+  "kind": "directional",
+  "src": "frost_wolf_00001_.png",
+  "frameWidth": 320,
+  "frameHeight": 320,
+  "framesPerDir": 2,
+  "rows": [
+    {
+      "name": "down",
+      "row": 0,
+      "frames": 2
+    },
+    {
+      "name": "down_right",
+      "row": 1,
+      "frames": 2
+    },
+    {
+      "name": "right",
+      "row": 2,
+      "frames": 2
+    },
+    {
+      "name": "up_right",
+      "row": 3,
+      "frames": 2
+    },
+    {
+      "name": "up",
+      "row": 4,
+      "frames": 2
+    },
+    {
+      "name": "up_left",
+      "row": 5,
+      "frames": 2
+    },
+    {
+      "name": "left",
+      "row": 6,
+      "frames": 2
+    },
+    {
+      "name": "down_left",
+      "row": 7,
+      "frames": 2
+    }
+  ]
+}

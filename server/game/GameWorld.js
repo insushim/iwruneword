@@ -48,6 +48,8 @@ class GameWorld {
   }
 
   spawnMonsters() {
+    const starterSpawn = CONSTANTS.SPAWN_POINTS?.NEW_CHARACTER || { x: 4500, y: 3600 };
+
     // Zone areas for 38400x28800 map
     const zoneAreas = {
       'forest_of_words': { x: [600, 12000], y: [600, 9000] },
@@ -121,6 +123,19 @@ class GameWorld {
           m.respawnMult = hg.respawnMult;
         }
       }
+    }
+
+    // Guarantee a few beginner monsters close to the new character spawn.
+    const starterArea = {
+      x: [starterSpawn.x - 70, starterSpawn.x + 70],
+      y: [starterSpawn.y - 70, starterSpawn.y + 70]
+    };
+    for (const monsterId of ['slime_green', 'slime_green', 'slime_blue']) {
+      const template = monsterTemplateMap[monsterId];
+      if (!template) continue;
+      const m = this._spawnOne(template, starterArea);
+      m.huntingGround = 'starter_camp';
+      m.respawnMult = 0.5;
     }
 
     console.log(`Spawned ${this.monsters.size} monsters (incl. hunting grounds)`);
@@ -721,7 +736,7 @@ class GameWorld {
         visiblePlayers.push({
           id: socketId, name: player.name, level: player.level,
           class: player.class, hp: player.hp, maxHp: player.maxHp,
-          x: player.x, y: player.y
+          x: player.x, y: player.y, direction: player.direction || 'down'
         });
       }
     }

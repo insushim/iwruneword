@@ -903,17 +903,20 @@ class SocketHandler {
 
         // Save HP periodically (not every tick - done on disconnect/quiz)
         if (player.hp <= 0) {
-          // Player died - respawn at village with half HP + EXP penalty
+          // Player died - respawn at town with half HP + EXP penalty
+          const respawnPoint = CONSTANTS.SPAWN_POINTS.TOWN_RESPAWN;
           player.hp = Math.floor(player.maxHp * 0.5);
-          player.x = 2400; player.y = 2400;
+          player.zone = respawnPoint.zone;
+          player.x = respawnPoint.x;
+          player.y = respawnPoint.y;
 
           // Death penalty: lose % of current level's required EXP
           const expPenalty = Math.floor((CONSTANTS.EXP_TABLE[player.level - 1] || 200) * (CONSTANTS.DEATH_EXP_PENALTY || 0.03));
           const prevExp = player.exp;
           player.exp = Math.max(0, player.exp - expPenalty);
 
-          db.prepare('UPDATE characters SET hp=?, x=?, y=?, exp=? WHERE id=?').run(
-            player.hp, player.x, player.y, player.exp, socket.characterId
+          db.prepare('UPDATE characters SET hp=?, zone=?, x=?, y=?, exp=? WHERE id=?').run(
+            player.hp, player.zone, player.x, player.y, player.exp, socket.characterId
           );
           socket.emit('player_died', {
             message: `${atk.monsterName}에게 쓰러졌습니다! 마을로 귀환합니다.`,

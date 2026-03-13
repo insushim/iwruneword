@@ -97,6 +97,11 @@ const CONSTANTS = {
     DEMON_WASTELAND: { id: 'demon_wasteland', name: '마왕의 황무지', levelRange: [60, 99], safeZone: false, biome: 'wasteland' }
   },
 
+  SPAWN_POINTS: {
+    NEW_CHARACTER: { zone: 'forest_of_words', x: 4500, y: 3600 },
+    TOWN_RESPAWN: { zone: 'starting_village', x: 2400, y: 2400 }
+  },
+
   // Steeper EXP curve: slime(15exp) -> ~13 kills for lv1->2, scales harder
   EXP_TABLE: Array.from({ length: 99 }, (_, i) => Math.floor(200 * (i + 1) * Math.pow(1.12, i))),
 

@@ -1,0 +1,49 @@
+{
+  "kind": "directional",
+  "src": "sheet.png",
+  "frameWidth": 192,
+  "frameHeight": 256,
+  "framesPerDir": 4,
+  "rows": [
+    {
+      "name": "down",
+      "row": 0,
+      "frames": 4
+    },
+    {
+      "name": "down_right",
+      "row": 1,
+      "frames": 4
+    },
+    {
+      "name": "right",
+      "row": 2,
+      "frames": 4
+    },
+    {
+      "name": "up_right",
+      "row": 3,
+      "frames": 4
+    },
+    {
+      "name": "up",
+      "row": 4,
+      "frames": 4
+    },
+    {
+      "name": "up_left",
+      "row": 5,
+      "frames": 4
+    },
+    {
+      "name": "left",
+      "row": 6,
+      "frames": 4
+    },
+    {
+      "name": "down_left",
+      "row": 7,
+      "frames": 4
+    }
+  ]
+}

@@ -7,7 +7,7 @@
       "spriteColor": "#44CC44", "spriteType": "slime",
       "aggroType": "passive", "moveSpeed": 0.4, "aggroRange": 0,
       "respawnTime": 10,
-      "drops": [{"itemId": "potion_hp_small", "rate": 0.4}, {"itemId": "slime_jelly", "rate": 0.3}]
+      "drops": [{"itemId": "potion_hp_small", "rate": 0.1}, {"itemId": "slime_jelly", "rate": 0.3}]
     },
     {
       "id": "slime_blue", "name": "파란 슬라임", "nameEn": "Blue Slime",
@@ -16,7 +16,7 @@
       "spriteColor": "#4488FF", "spriteType": "slime",
       "aggroType": "passive", "moveSpeed": 0.5, "aggroRange": 0,
       "respawnTime": 10,
-      "drops": [{"itemId": "potion_hp_small", "rate": 0.35}, {"itemId": "slime_jelly", "rate": 0.35}]
+      "drops": [{"itemId": "potion_hp_small", "rate": 0.12}, {"itemId": "slime_jelly", "rate": 0.35}]
     },
     {
       "id": "wolf_gray", "name": "회색 늑대", "nameEn": "Gray Wolf",
@@ -133,7 +133,7 @@
       "spriteColor": "#66FF88", "spriteType": "slime",
       "aggroType": "passive", "moveSpeed": 0.6, "aggroRange": 0,
       "respawnTime": 8,
-      "drops": [{"itemId": "potion_mp_medium", "rate": 0.3}]
+      "drops": [{"itemId": "potion_mp_medium", "rate": 0.08}]
     },
     {
       "id": "thorn_golem", "name": "가시 골렘", "nameEn": "Thorn Golem",

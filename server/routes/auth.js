@@ -6,6 +6,7 @@ const router = express.Router();
 
 const JWT_SECRET = process.env.JWT_SECRET || 'runeword_secret';
 const CONSTANTS = require('../../shared/constants');
+const STARTER_SPAWN = CONSTANTS.SPAWN_POINTS.NEW_CHARACTER;
 
 router.post('/register', (req, res) => {
   try {
@@ -29,11 +30,12 @@ router.post('/register', (req, res) => {
 
     const classData = CONSTANTS.CLASSES[characterClass] || CONSTANTS.CLASSES.WARRIOR;
     db.prepare(`
-      INSERT INTO characters (user_id, name, class, hp, max_hp, mp, max_mp, atk, def, speed)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      INSERT INTO characters (user_id, name, class, hp, max_hp, mp, max_mp, atk, def, speed, zone, x, y)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `).run(userId, characterName, characterClass || 'WARRIOR',
       classData.baseHP, classData.baseHP, classData.baseMP, classData.baseMP,
-      classData.baseATK, classData.baseDEF, classData.baseSpeed);
+      classData.baseATK, classData.baseDEF, classData.baseSpeed,
+      STARTER_SPAWN.zone, STARTER_SPAWN.x, STARTER_SPAWN.y);
 
     const charId = db.prepare('SELECT id FROM characters WHERE user_id = ?').get(userId).id;
     db.prepare('INSERT INTO inventory (character_id, item_id, quantity) VALUES (?, ?, ?)').run(charId, 'potion_hp_small', 10);
